@@ -1,0 +1,112 @@
+@media (max-width: 900px) {
+    #Seccion_Juego {
+        left: -200%;
+    }
+    .Seccion_01 {
+        gap: 110px;
+    }
+    .Titulo_historia {
+        left: -200%;
+    }
+    .Contenedor_Supremo #Reglas {
+        flex-direction: column;
+        margin-top: -20px;
+    }
+    .Reglas_estilos {
+        width: 80%;
+        height: 90px;
+    }
+    .Reglas_estilos h3, p {
+        font-size: 60%;
+    }
+    .contenedorReglas {
+        align-items: center;
+        margin-right: 30px;
+    }
+    .contenedorReglas .Img_reglas {
+        width: 300px;
+    }
+    .sec3Reglas {
+        align-items: center;
+        margin-left: 70px;
+    }
+    .contenedorReglas .Listo {
+        margin-right: 30px;
+        font-size: 15px;
+    }
+    .contenedorReglas .Titulo_Reglas {
+        font-size: 4VW;
+    }
+
+    #Seccion_2 {
+        margin-top: 50px;
+    }
+    #Seccion_2 .Titulo_historia{
+        font-size: 30px;
+        margin-left: 40px;
+    }
+    #Seccion_2 article {
+        flex-direction: column;
+    }
+    #Seccion_2 .Imgane_metiorito {
+        position: relative;
+        display: flex;
+        margin-top: -80px;
+        max-width: 400px;
+    }
+    #Mensaje{
+        margin-top: 50px;
+        width: 380px;
+        font-size: 80%;
+    }
+    #Mensaje .Boton_preparado {
+        font-size: 80%;
+        text-align: center;
+    }
+    .BOTONES_2 {
+        padding: 10px 0px;
+    }
+    
+    #Seccion_Juego .Contenedor {
+        width: 450px; 
+    }
+    #Seccion_Juego .Pause {
+        text-align: center;
+    }
+    #Seccion_Juego .Contenedor_Mensaje_Star {
+        display: flex;
+        flex-direction: column;
+    }
+    #Seccion_Juego .Play {
+        left: 180px;
+        bottom: -200px;
+    }
+    #Seccion_Juego .Texo {
+        margin-top: 70px;
+        font-size: 20px;
+    }
+    #Seccion_Juego .Tituloar_Juego_5 {
+        margin-top: 230px;
+        font-size: 300%;
+        text-align: center;
+    }
+    #Seccion_Juego .Contenedor_LVL {
+        margin-top: -50px;
+        margin-right: 60px;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 30px;
+    }
+    #Seccion_Juego .NEXT {
+        padding: 20px 40px;
+        font-size: 10px;
+    }
+    #Seccion_Juego .Nada {
+        width: 400px;
+        font-size: 150%;
+    }
+    #Seccion_Juego .Nada h2{
+        font-size: 20px;
+    }
+}
