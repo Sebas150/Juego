@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
     <!--iMPORTE UN TIPO DE LETA-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <title>Juegos</title>
@@ -30,37 +31,36 @@
 </section>
 <!--SECCION - 3 ------------------------------------------------------------------------------------------------------->
 
-<section  id="Reglas">
-    <h1 class="Titulo_Reglas">Antes de empezar lee,<br><br> las reglas.</h1>
-    <img src="IMG/JUEGO.jpg"  class="Img_reglas">
-    <div class="Reglas_estilos" id="R1">
-        <h3>REGLA : 1</h3>
-        <p>Lo que se encuentra señalado son los puntos, que segun tu progreso, se irán incrementando al desviar 
-            meteoritos de la tierra (Esto al pasar el cursor sobre el meteorito que se acerca), si los puntos obtenidos
-            llegan a 30, es una victoria automática, pero recuerda que los meteoritos son impredecibles en su ataque así que
-            tienes que estar atento a su llegada
-        </p>
-    </div>
+<       <section id="Reglas">
+    <article class="contenedorReglas">
+        <h1 class="Titulo_Reglas">Antes de empezar lee,<br><br> las reglas.</h1>
+        <img src="IMG/JUEGO.jpg" class="Img_reglas">
+        <div class="Listo" onclick="Mover_2()">¿Estas listo?</div>
+    </article>
+    <article class="sec3Reglas">
+        <div class="Reglas_estilos" id="R1">
+            <h3>REGLA : 1</h3>
+            <p>Lo que se encuentra señalado son los puntos, que segun tu progreso, se irán incrementando al desviar meteoritos de la tierra (Esto al pasar el cursor sobre el meteorito que se acerca), si los puntos obtenidos llegan a 30, es una victoria
+                automática, pero recuerda que los meteoritos son impredecibles en su ataque así que tienes que estar atento a su llegada
+            </p>
+        </div>
 
 
-    <div class="Reglas_estilos" id="R2">
-        <h3>REGLA : 2</h3>
-        <p>El tiempo que se señala es el límite máximo que puede aguantar la defensa, siendo unos 60 segundos, en los que
-            el jugador debe cumplir el límite de puntos o sera un GAMER OVER automático, asi que recuerda ser rápido recolectando
-            puntos.
-        </p>
-    </div>
+        <div class="Reglas_estilos" id="R2">
+            <h3>REGLA : 2</h3>
+            <p>El tiempo que se señala es el límite máximo que puede aguantar la defensa, siendo unos 60 segundos, en los que el jugador debe cumplir el límite de puntos o sera un GAMER OVER automático, asi que recuerda ser rápido recolectando puntos.
+            </p>
+        </div>
 
 
-    <div class="Reglas_estilos" id="R3_4">
-        <h3>REGLA : 3 y 4</h3>
-        <p>Estos son los meteoritos que debes evitar que ingresen a la tierra, por lo general suelen ser rápidos así que 
-            recuerda: no te descuides o confies por que en el momento que lo hagas, estos llegarán a la tierra, es por ello
-            que una raya señala el límite por el cual ya es inevitable nuestra salvación (GAME OVER)
-        </p>
-    </div>
+        <div class="Reglas_estilos" id="R3_4">
+            <h3>REGLA : 3 y 4</h3>
+            <p>Estos son los meteoritos que debes evitar que ingresen a la tierra, por lo general suelen ser rápidos así que recuerda: no te descuides o confies por que en el momento que lo hagas, estos llegarán a la tierra, es por ello que una raya
+                señala el límite por el cual ya es inevitable nuestra salvación (GAME OVER)
+            </p>
+        </div>
+    </article>
 
-<div class="Listo" onclick="Mover_2()">¿Estas listo?</div>
 
 
 </section>
@@ -106,7 +106,6 @@ preparando con la ayuda del resto de gobiernos, la iniciativa <strong>"DESTRUCTI
             <div class="Contenedor"> 
             <!--EFECTOS DE SONIDO-->
             <audio id="Perdiste_sound" src="Perdiste.mp3" preload="auto"></audio>
-            <audio id="Fondo_Ciberpunk" src="Ciberpunk.mp3" preload="auto" autoplay loop></audio>
             <audio id="Puntos_sound" src="Puntos.mp3" preload="auto"></audio>
             <audio id="Punto2" src="Punto2.mp3" preload="auto"></audio>
             <audio id="Punto3" src="Punto3.mp3"preload="auto"></audio>
@@ -336,11 +335,28 @@ preparando con la ayuda del resto de gobiernos, la iniciativa <strong>"DESTRUCTI
             </div>
         </div>
         </div>
-           
-<div class="Nada" id="Nada"><h2>Una vez completes este nivel, se habilitará la opcion "SIGUIENTE".</h2><p>Recuerda que los niveles son progresivos
-    y mejorarán tu nivel de reacción ante estímulos y mucho más importante, te dará una gran sorpresa al final, así que recuerda
-    no perdértela y no parar de intentar 
-</p></div>
+        <div class="container">
+            <div class="listado-canciones">
+                <div class="cancion">
+                    <div class="titulo">
+                        chilleando
+                    </div>
+                    <div class="play" id="Outsiders">
+                        <span class="material-icons">
+                            play_circle
+                        </span>
+                    </div>
+                    <br/>
+                    <div class="stop">
+                        <span class="material-icons">
+                            cancel
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <input type="range" max="1" min="0" step="0.1" class="volumen">
+        </div>
+        <script src="codigo.js"></script>
 <div class="NEXT" id="NEXT"><h2>SIGUIENTE NIVEL&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></h2></div>
 </div>
 

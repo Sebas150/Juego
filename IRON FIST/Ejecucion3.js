@@ -55,7 +55,6 @@ function JUEGOlvl3() {
             setTimeout(Contactos, 15000)
 
             
-            document.getElementById("Fondo_Ciberpunk").pause()
             document.getElementById("Triunfo").play()
 
             function Ganaste_Pantallalvl3(){
@@ -265,7 +264,6 @@ Conteolvl3 = 4
 
 //ESTA FUNCION EJECUTA UN CONJUNTO DE ACCIONES AL PRESIONAR JUGAR
 function PLAYlvl3() {
-    document.getElementById("Fondo_Ciberpunk").play()
     //MUEVE EL TITULO FUERA DEL CONTENEDOR UNA VEZ DE CLICK A JUGAR
     document.getElementById("Textolvl3").style.left = "-900px"
     //MUEVE AL BOTON PLAY TRANS PRESIONAR PRESIONAR AL MISMO BOTON
@@ -312,7 +310,6 @@ function DETENER_JUEGOlvl3() {
             document.getElementById("Pausa_Pantallalvl3").style.display = "table"
             clearInterval(Restar_Tiempolvl3) //BORRAMOS LA FUNCION DE TIEMPO
             document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
-            document.getElementById("Fondo_Ciberpunk").pause()
             function Meteorito_detenerlvl3() {
                 clearInterval(Intervalo_Dirlvl3)
                 clearInterval(Intervalo_Dir2lvl3)
@@ -337,7 +334,6 @@ function DETENER_JUEGOlvl3() {
         else { //LA FUNCION DE REANUDAR
             document.getElementById("Pausa_Pantallalvl3").style.display = "none"
             //BORRAMOS LA FUNCION, PARA QUE EL REANUDAR PUEDA EJECUTARSE DE NUEVO
-            document.getElementById("Fondo_Ciberpunk").play()
             clearInterval(Pause_offlvl3)
 
             function Tiempo_Disminurlvl3() { //VOLVEMOS A CREAR LA FUNCION DE TIEMPO PARA QUE REANUDE EL CONTEO

@@ -1,2 +1,0 @@
-# Juego
-Pruebas de software

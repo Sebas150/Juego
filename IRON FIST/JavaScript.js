@@ -117,7 +117,6 @@ function JUEGO(){
                 document.getElementById("Tiempo").innerHTML = 70
                 document.getElementById("Puntaje").innerHTML = 0+"&nbsp;/&nbsp;"+27
                 document.getElementById("Triunfo").play()
-                document.getElementById("Fondo_Ciberpunk").pause()
                 document.getElementById("Puntos_sound").pause()
                 document.getElementById("Punto2").pause()
                 document.getElementById("GANASTE_PANTALLA").style.display = "flex"
@@ -246,7 +245,6 @@ function JUEGO(){
             
             //ESTA FUNCION EJECUTA UN CONJUNTO DE ACCIONES AL PRESIONAR JUGAR
             function PLAY(){
-                document.getElementById("Fondo_Ciberpunk").play()
                 //MUEVE EL TITULO FUERA DEL CONTENEDOR UNA VEZ DE CLICK A JUGAR
                 document.getElementById("Texo").style.left = "-900px" 
                 //MUEVE AL BOTON PLAY TRANS PRESIONAR PRESIONAR AL MISMO BOTON
@@ -287,7 +285,6 @@ function JUEGO(){
                         //SI LLEGA A UNA EJECUTA LA FUNCION PAUSE
                         if (Activo == 1){
                         
-                        document.getElementById("Fondo_Ciberpunk").pause()
                         document.getElementById("Pausa_Pantalla").style.display = "table"
                         clearInterval(Restar_Tiempo)//BORRAMOS LA FUNCION DE TIEMPO
                         document.getElementById("Tiempo").innerHTML = Tiempo
@@ -307,7 +304,6 @@ function JUEGO(){
                         else { //LA FUNCION DE REANUDAR
                             clearInterval(Pusae_offf) //BORRAMOS LA FUNCION, PARA QUE EL REANUDAR PUEDA EJECUTARSE DE NUEVO
                             document.getElementById("Pausa_Pantalla").style.display = "none"
-                            document.getElementById("Fondo_Ciberpunk").play()
                             function Tiempo_Disminur(){//VOLVEMOS A CREAR LA FUNCION DE TIEMPO PARA QUE REANUEDE EL CONTEO
                                 Tiempo--;
                                 document.getElementById("Tiempo").innerHTML = Tiempo
