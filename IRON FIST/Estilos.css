@@ -1,8 +1,8 @@
 html body{margin: 0; padding: 0; font-family: sans-serif;}/*RESTABLESCO LA PAGINA, SI MARGEN EN LOS BORDES*/
 
 
-#Fondo {background-image: url(IMG/Fondo_Espacio.gif) ; color: white; background-attachment: fixed; background-repeat: no-repeat;
-background-size: 100% 120%;
+#Fondo {background-image: url(IMG/background_main.gif) ; color: white; background-attachment: fixed; background-repeat: no-repeat;
+background-size: 100% 100%;
  }
 
 
@@ -27,15 +27,16 @@ left: 44%; top: 4%; cursor: pointer;}
 
 .Texto_Principal { /*ESTE ES EL TITULO DE IRON FIST*/
     font-family: 'Press Start 2P', cursive; text-align: center;
-    font-size: 3.8vw;
+    font-size: 3.0vw;
     text-align: center;
     position: relative;
     top: -12%;
+    margin: 100px;
 }
 
 .Nombre{ /*ESTE ES LA PREGUNTA DEBAJO DEL NOMBRE*/
     font-family: 'Press Start 2P', cursive; text-align: center;
-    font-size: 5.9vw;
+    font-size: 5.0vw;
     text-align: center;
     position: relative;
     top: 0%;
