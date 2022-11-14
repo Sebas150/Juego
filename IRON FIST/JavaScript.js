@@ -18,7 +18,7 @@ Swal.fire({
 
 
 
-Tiempo = 90 //VARIBLE DE INICIO TIEMPO
+Tiempo = 50 //VARIBLE DE INICIO TIEMPO
 Puntaje = 0 //VARIABLE DE INICIO PUNTOS
 
 
@@ -78,7 +78,7 @@ function JUEGO() {
         Tiempo--;
         document.getElementById("Tiempo").innerHTML = Tiempo
         if (Tiempo == 0) {
-            Tiempo = 90
+            Tiempo = 50
             Puntaje = 0
             document.getElementById("Perdiste_sound").play()
             alert("Lo lamento perdiste")
@@ -96,10 +96,10 @@ function JUEGO() {
     //FUNCION QUE UNICAMENTE AUMENTA PUNTOS Y RESETEA LAS VARIABLES AL LLEGAR A CIERTO LIMITE
     function Aumentar_Puntos() {
         Puntaje++;
-        document.getElementById("Puntaje").innerHTML = Puntaje + "&nbsp;/&nbsp;40"
-        if (Puntaje == 40) {
+        document.getElementById("Puntaje").innerHTML = Puntaje + "&nbsp;/&nbsp;20"
+        if (Puntaje == 20) {
             Puntaje = 0
-            Tiempo = 90
+            Tiempo = 50
 
 
             document.getElementById("NEXT").addEventListener('click', Habilitar_Siguienten_LVL)
@@ -108,8 +108,8 @@ function JUEGO() {
                 document.getElementById("NIVEL_01").style.display = "none"
                 document.getElementById("NIVEL_02").style.display = "block"
             }
-            document.getElementById("Tiempo").innerHTML = 90
-            document.getElementById("Puntaje").innerHTML = 30 + "&nbsp;/&nbsp;" + 30
+            document.getElementById("Tiempo").innerHTML = 50
+            document.getElementById("Puntaje").innerHTML = 20 + "&nbsp;/&nbsp;" + 20
             document.getElementById("Triunfo").play()
             document.getElementById("Fondo_Ciberpunk").pause()
             document.getElementById("Puntos_sound").pause()
@@ -226,7 +226,7 @@ function JUEGO() {
             document.getElementById("Meteiorito2").style.left = "-70%"
             document.getElementById("Meteiorito2").style.transition = "0s"
 
-            Tiempo = 90
+            Tiempo = 50
             Puntaje = 0
         } else {
             document.getElementById("Meteiorito").style.transition = "2.4s"
@@ -321,7 +321,7 @@ function DETENER_JUEGO() {
                 Tiempo--;
                 document.getElementById("Tiempo").innerHTML = Tiempo
                 if (Tiempo == 0) {
-                    Tiempo = 71
+                    Tiempo = 50
                     Puntaje = 0
                     document.getElementById("Perdiste_sound").play()
                     alert("Lo lamento perdiste")

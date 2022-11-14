@@ -11,7 +11,7 @@ function JUEGOlvl3() {
         Tiempolvl3--;
         document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
         if (Tiempolvl3 == 0) {
-            Tiempolvl3 = 51
+            Tiempolvl3 = 90
             Puntajelvl3 = 0
             alert("Lo lamento perdiste")
         }
@@ -31,7 +31,7 @@ function JUEGOlvl3() {
         document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 4"
         if (Puntajelvl3 == 1) {
             Puntajelvl3 = 0
-            Tiempolvl3 = 51
+            Tiempolvl3 = 90
 
             function Contactos() {
                 Swal.fire({
@@ -74,7 +74,7 @@ function JUEGOlvl3() {
 
             setInterval(Ganaste_Pantallalvl3, 1)
 
-            Tiempolvl3 = 51
+            Tiempolvl3 = 90
             Puntajelvl3 = 0
 
             clearInterval(Intervalo_Dirlvl3)
@@ -92,14 +92,14 @@ function JUEGOlvl3() {
             document.getElementById("Pantalla_Ovnis2lvl3").style.left = "7%"
             document.getElementById("Pantalla_Ovnis2lvl3").style.transition = "6s"
 
-            //function Creditoslvl3() {
-            //    document.getElementById("Pantalla_creditoslvl3").style.background = "black"
-            //   document.getElementById("Creditoslvl3").style.top = "-15%"
-            //   document.getElementById("Creditoslvl3").style.transition = "10s"
-            //    document.getElementById("Proximolvl3").style.bottom = "-34%"
-            //   document.getElementById("Proximolvl3").style.transition = "15s"
-            //   }
-            //    setTimeout(Creditoslvl3, 5000)
+            function Creditoslvl3() {
+                document.getElementById("Pantalla_creditoslvl3").style.background = "black"
+                document.getElementById("Creditoslvl3").style.top = "-15%"
+                document.getElementById("Creditoslvl3").style.transition = "10s"
+                document.getElementById("Proximolvl3").style.bottom = "-34%"
+                document.getElementById("Proximolvl3").style.transition = "15s"
+            }
+            setTimeout(Creditoslvl3, 5000)
         }
     }
 
@@ -239,7 +239,7 @@ function JUEGOlvl3() {
             document.getElementById("Meteorito4lvl3").style.transition = "0s"
             setTimeout(Meteorito_Direccion4lvl3, 2900)
 
-            Tiempolvl3 = 51
+            Tiempolvl3 = 90
             Puntajelvl3 = 0
         } else {
 
@@ -347,7 +347,7 @@ function DETENER_JUEGOlvl3() {
                 Tiempolvl3--;
                 document.getElementById("Tiempolvl3").innerHTML = Tiempolvl3
                 if (Tiempolvl3 == 0) {
-                    Tiempolvl3 = 51
+                    Tiempolvl3 = 90
                     Puntajelvl3 = 0
                     alert("Lo lamento perdiste")
                 }
