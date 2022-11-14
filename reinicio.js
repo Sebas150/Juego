@@ -1,0 +1,1 @@
+function reinicio() { URL = "./IRON FIST/index.html" }

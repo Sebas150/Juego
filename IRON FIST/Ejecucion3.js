@@ -28,7 +28,7 @@ function JUEGOlvl3() {
     //FUNCION QUE UNICAMENTE AUMENTA PUNTOS Y RESETEA LAS VARIABLES AL LLEGAR A CIERTO LIMITE
     function Aumentar_Puntoslvl3() {
         Puntajelvl3++;
-        document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 4"
+        document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 20"
         if (Puntajelvl3 == 1) {
             Puntajelvl3 = 0
             Tiempolvl3 = 90
@@ -261,7 +261,7 @@ function JUEGOlvl3() {
 document.getElementById("Playlvl3").addEventListener('click', PLAYlvl3)
 
 //ESTE ES EL CONTEO DE LA CUENTA REGRESIVA QUE SE DA DESPUEZ DE PRESINAR JUGAR
-Conteolvl3 = 4
+Conteolvl3 = 50
 
 //ESTA FUNCION EJECUTA UN CONJUNTO DE ACCIONES AL PRESIONAR JUGAR
 function PLAYlvl3() {

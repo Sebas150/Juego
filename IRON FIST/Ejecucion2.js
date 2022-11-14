@@ -1,4 +1,4 @@
-Tiempolvl2 = 90 //VARIBLE DE INICIO TIEMPO
+Tiempolvl2 = 50 //VARIBLE DE INICIO TIEMPO
 Puntajelvl2 = 0 //VARIABLE DE INICIO PUNTOS
 
 
@@ -14,7 +14,7 @@ function JUEGOlvl2() {
         Tiempolvl2--;
         document.getElementById("Tiempolvl2").innerHTML = Tiempolvl2
         if (Tiempolvl2 == 0) {
-            Tiempolvl2 = 60
+            Tiempolvl2 = 30
             Puntajelvl2 = 0
             alert("El tiempo se agotó, lo lamento, de seguro lo lograrás para la siguiente")
         }
@@ -35,10 +35,10 @@ function JUEGOlvl2() {
         document.getElementById("Puntajelvl2").innerHTML = Puntajelvl2 + " / 40"
         if (Puntajelvl2 == 2) {
             Puntajelvl2 = 0
-            Tiempolvl2 = 60
+            Tiempolvl2 = 30
 
-            document.getElementById("Tiempolvl2").innerHTML = 60
-            document.getElementById("Puntajelvl2").innerHTML = 0 + "&nbsp;/&nbsp;" + 60
+            document.getElementById("Tiempolvl2").innerHTML = 30
+            document.getElementById("Puntajelvl2").innerHTML = 0 + "&nbsp;/&nbsp;" + 30
             document.getElementById("Fondo_Ciberpunk").pause()
             document.getElementById("Triunfo").play()
             document.getElementById("NEXT").addEventListener('click', Habilitar_Siguienten_LVL)
@@ -196,7 +196,7 @@ function JUEGOlvl2() {
             document.getElementById("Meteiorito3lvl2").style.left = "-70%"
             document.getElementById("Meteiorito3lvl2").style.transition = "0s"
 
-            Tiempolvl2 = 60
+            Tiempolvl2 = 30
             Puntajelvl2 = 0
         } else {
             document.getElementById("Meteioritolvl2").style.transition = "2s"
@@ -292,7 +292,7 @@ function DETENER_JUEGOlvl2() {
                 Tiempolvl2--;
                 document.getElementById("Tiempolvl2").innerHTML = Tiempolvl2
                 if (Tiempolvl2 == 0) {
-                    Tiempolvl2 = 60
+                    Tiempolvl2 = 20
                     Puntajelvl2 = 0
                     alert("Lo lamento perdiste")
                 }
